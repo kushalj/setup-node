@@ -41,3 +41,7 @@ ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 
+# Amazon EC2 metadata tools
+wget http://s3.amazonaws.com/ec2metadata/ec2-metadata
+chmod u+x ec2-metadata
+
