@@ -45,3 +45,8 @@ ln -sf dotfiles/.emacs.d .
 wget http://s3.amazonaws.com/ec2metadata/ec2-metadata
 chmod u+x ec2-metadata
 
+# fixes alt-3 on UK Mac keyboards to get a '#'
+cat mac_uk_hashfix.txt >> ~/.emacs
+
+# this can set the git to push over SSH instead of HTTP
+# git remote set-url origin git@github.com:kushalj/setup-node.git

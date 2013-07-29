@@ -8,7 +8,7 @@ follows:
 cd $HOME
 sudo apt-get install -y git-core
 git clone https://github.com/startup-class/setup.git
-./setup/setup.sh   
+./setup-node/setup.sh   
 ```
 
 See also http://github.com/startup-class/dotfiles and
@@ -16,6 +16,8 @@ See also http://github.com/startup-class/dotfiles and
 for more details.
 
 
+This is a modified/evolved version of the original that expands:
 
+git setup : git_setup.sh [username] [email] 
 
-
+mac hash fix for UK keyboard : (inside ./bashrc)
