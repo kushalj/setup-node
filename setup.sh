@@ -7,6 +7,10 @@
 sudo apt-get install -y git-core
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
+# fixes alt-3 on UK Mac keyboards to get a '#'
+source mac_uk_hashfix.sh
+
+
 # Load nvm and install latest production node
 source $HOME/.nvm/nvm.sh
 nvm install v0.10.12
@@ -42,11 +46,8 @@ ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 
 # Amazon EC2 metadata tools
-wget http://s3.amazonaws.com/ec2metadata/ec2-metadata
-chmod u+x ec2-metadata
-
-# fixes alt-3 on UK Mac keyboards to get a '#'
-source mac_uk_hashfix.sh
+echo "wget http://s3.amazonaws.com/ec2metadata/ec2-metadata"
+echo "chmod u+x ec2-metadata"
 
 # this can set the git to push over SSH instead of HTTP
 # git remote set-url origin git@github.com:kushalj/setup-node.git
